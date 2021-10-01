@@ -48,12 +48,13 @@
       <!--name es para obetner los datos del input-->
       <!-- ID es un identificador-->
       <input
-        autofocus
+        autocomplete="new-password"
         id="nombre"
         name="npmbre"
         type="text"
         placeholder="Ingrese su nombre"
         required
+        autofocus
       />
       <br />
       <br />
@@ -68,7 +69,15 @@
       <br />
       <br />
       <label for="fecha_nacimiento">Fecha de nacimiento</label>
-      <input id="fecha_nacimiento" name="fecha_nacimiento" type="date" />
+      <input
+        id="fecha_nacimiento"
+        name="fecha_nacimiento"
+        type="date"
+        min="1950-01-01"
+        max="2020-12-01"
+        value="2021-09-30"
+      />
+      <!--max y min --fecha minima y maxima-->
       <br />
       <br />
       <label for="correo">Correo</label>
