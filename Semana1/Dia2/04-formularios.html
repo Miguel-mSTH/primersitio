@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Login</h1>
+    <img src="" alt="" />
+    <!--para crear formularios es FORM-->
+    <!--cuando tengamos un formilario que entrega datos sesnsbles este debe tener el methos="post" y en caso contrario method="get"-->
+    <form action="" method="POST">
+      <!--Para poder ponerle un titulo a mi formulario debo utilizar FIELDSET Y LEGEND-->
+      <!--ACTION es el lugar a donde va ir la informacion de mi formulario-->
+      <fieldset>
+        <legend>Titulo de mi formulario</legend>
+        <!-- hagamos un formulario de Login-->
+        <!-- la etiqueta se usa para poder crear cajas  es INPUT-->
+        <!-- una propiedad de los INPUT son los PLACEHOLDER-->
+        <!-- los INPUT tiene tipos: email, number, date, time,color,text,password-->
+        <input
+          name="correo"
+          placeholder="Ingrese su correo"
+          required
+          type="email"
+        />
+        <!--Existe una etiqueta llamada BR: nos da un salto de linea-->
+        <br />
+        <br />
+        <input
+          name="password"
+          placeholder="Ingrese su contraseña"
+          required
+          type="password"
+        />
+        <!--para hacer un boton existen varias formas, si quiero un boton que se encargue de enviar los datos este boton debe ser SUBMIT, otra etiqueta llamada button que permite -->
+        <button type="submit">Iniciar Sesion</button>
+      </fieldset>
+    </form>
+    <h1>Formulario de registro</h1>
+    <form action=""></form>
+    <fieldset>
+      <legend>Ingresa todos tus datos</legend>
+      <!--titulo del input-->
+      <label for="nombre">Nombre</label>
+      <!--name es para obetner los datos del input-->
+      <!-- ID es un identificador-->
+      <input
+        id="nombre"
+        name="npmbre"
+        type="text"
+        placeholder="Ingrese su nombre"
+      />
+      <br />
+      <br />
+      <label for="apellido">Apellido</label>
+      <input
+        id="apellido"
+        name="apellido"
+        type="text"
+        placeholder="Ingrese su apellido"
+      />
+      <br />
+      <br />
+      <label for="fecha_nacimiento">Fecha de nacimiento</label>
+      <input id="fecha_nacimiento" name="fecha_nacimiento" type="date" />
+    </fieldset>
+  </body>
+</html>
