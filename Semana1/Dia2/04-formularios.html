@@ -40,7 +40,7 @@
       </fieldset>
     </form>
     <h1>Formulario de registro</h1>
-    <form action=""></form>
+    <form action="" method="POST"></form>
     <fieldset>
       <legend>Ingresa todos tus datos</legend>
       <!--titulo del input-->
@@ -48,10 +48,12 @@
       <!--name es para obetner los datos del input-->
       <!-- ID es un identificador-->
       <input
+        autofocus
         id="nombre"
         name="npmbre"
         type="text"
         placeholder="Ingrese su nombre"
+        required
       />
       <br />
       <br />
@@ -61,11 +63,91 @@
         name="apellido"
         type="text"
         placeholder="Ingrese su apellido"
+        required
       />
       <br />
       <br />
       <label for="fecha_nacimiento">Fecha de nacimiento</label>
       <input id="fecha_nacimiento" name="fecha_nacimiento" type="date" />
+      <br />
+      <br />
+      <label for="correo">Correo</label>
+      <input
+        type="email"
+        placeholder="Ingrese su correo"
+        id="correo"
+        name="correo"
+        required
+      />
+      <br />
+      <br />
+      <label for="password">Password</label>
+      <input
+        type="password"
+        name="password"
+        placeholder="Ingrese su contraseña"
+        required
+        id="password"
+      />
+      <br />
+      <br />
+      <label for="celular">Celular</label>
+      <!--cuando es tipo number unicamente abre 0 a 9-->
+      <!--cuando es tipo tel . este contiene las teclas 0a 9 + *-->
+      <input
+        type="number"
+        maxlength="9"
+        id="celular"
+        placeholder="Ingrese su celular"
+        name="celular"
+      />
+      <br />
+      <br />
+      <!--una lista desplqgable se llama select-->
+      <!--y los elementos se llaman option-->
+      <label for="pais">Pais</label>
+      <select name="pais" id="pais">
+        <option value="" disabled selected>Seleccione un pais</option>
+        <option value="Peru">Peru (+51)</option>
+        <option value="Argentina">Argentina (+31)</option>
+        <option value="Brazil">Brazil</option>
+        <option value="Alemania">Alemania</option>
+      </select>
+      <br />
+      <br />
+      <label for="terminos">
+        <!--cuando input sea de tipo checkbox o radiobutton este input se recomienda ponerlo dentro de label-->
+        <input id="terminos" name="terminos" required type="checkbox" />Acepta
+        los terminos y condiciones?
+      </label>
+      <br />
+      <br />
+      <label for="suscription1">
+        <input id="suscription1" name="suscription" type="radio" /> Suscipcion 1
+      </label>
+      <label for="suscription2">
+        <!--checked es para dejar por default-->
+        <input id="suscription2" checked name="suscription" type="radio" />
+        Suscipcion 2
+      </label>
+      <label for="suscription3">
+        <input id="suscription3" name="suscription" type="radio" /> Suscipcion 3
+      </label>
+      <br />
+      <br />
+      <!--textarea es un input es cual me permite llenar mucho texto-->
+      <label for="texto"></label>
+      <textarea
+        id="texto"
+        placeholder="Ingrese el texto"
+        name="texto"
+        rows="10"
+        cols="20"
+        maxlength="200"
+        minlength="20"
+      ></textarea>
+      <br />
+      <button type="submit">Registrarse</button>
     </fieldset>
   </body>
 </html>
