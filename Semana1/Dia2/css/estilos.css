@@ -1,0 +1,75 @@
+/*La familia font tiene que ver con todo lo referente a texto*/
+/* vamos a cmabiar el fondo del body con la propiedad background*/
+body {
+  font-family: "Red Hat Display", sans-serif;
+  /*no-repeat para no repetir la imagen*/
+  background: url("../img/fondo.svg") no-repeat;
+  /*para que ocupe toda la computadora*/
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /*10vh es virtual height*/
+  height: 100vh;
+}
+.contenedor {
+  background-color: #ffffff;
+  /* width px % vw (virtual window*/
+  width: 450px;
+  border-radius: 8px;
+}
+.contenedor-texto {
+  /*Basicamente nos genera un espacio de dentro para afuera */
+  padding: 30px;
+  text-align: center;
+}
+.imagen-fondo {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+#boton-pagar {
+  /*para cmabiar el color de texto se usa el atributo color*/
+  color: #fff;
+  background-color: #382ae1;
+  border: none;
+  padding: 15px;
+  border-radius: 8px;
+  width: 100%;
+  /*pone una manito al pasar por el botton*/
+  cursor: pointer;
+  /*para poner sombra es shadow*/
+  box-shadow: -4px 8px 32px -2px rgba(56, 42, 225, 0.41);
+  /*chrome safari android ios*/
+  -webkit-box-shadow: -4px 8px 32px -2px rgba(56, 42, 225, 0.41);
+  /*firefox*/
+  -moz-box-shadow: -4px 8px 32px -2px rgba(56, 42, 225, 0.41);
+}
+.boton-cancelar {
+  /*margin para dar espacio alrededor del boton* DA
+    margin-top, margin-botton=abajo,margin-left,margin-right*/
+  margin-top: 20px;
+  background-color: transparent;
+  border: none;
+  width: 100%;
+  cursor: pointer;
+  /*para volver negrita la letra de 100 a 900 y tiene bold*/
+  font-weight: bold;
+}
+.contenedor-detalle {
+  display: flex;
+  /*align-items es para ordenar de manera vertical este puede recibir
+  3 tipos d alineacion 1)flex-start 2)center 3)flex-end*/
+  align-items: center;
+  /*justify-content: es la forma de alinear mis elemento de manera horizontal 1) flex start 2)center 3)space-between 4)space-around 5)space-evenly 6)flex-end*/
+  justify-content: space-between;
+  /*0.1 es el nivel de transpariencia*/
+  background-color: rgba(56, 42, 225, 0.1);
+  margin-bottom: 20px;
+  padding: 15px;
+  border-radius: 8px;
+}
+.contenedor-detalle a {
+  text-decoration: none;
+  /*cmbiar tamaño de texto*/
+  font-size: 12px;
+}
