@@ -64,12 +64,22 @@ body {
   justify-content: space-between;
   /*0.1 es el nivel de transpariencia*/
   background-color: rgba(56, 42, 225, 0.1);
-  margin-bottom: 20px;
-  padding: 15px;
+  margin-bottom: 25px;
+  padding: 10px;
   border-radius: 8px;
 }
 .contenedor-detalle a {
   text-decoration: none;
   /*cmbiar tamaño de texto*/
   font-size: 12px;
+}
+.article {
+  display: flex;
+  align-items: center;
+
+  justify-content: center;
+}
+
+.article img {
+  margin-right: 10px;
 }
