@@ -1,0 +1,36 @@
+h1 {
+  font-family: Arial;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 34px;
+  line-height: 39px;
+  color: #2400ff;
+}
+ul {
+  list-style: none;
+}
+img {
+  margin: 10px;
+}
+p {
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 28px;
+  /* or 156% */
+}
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer h4 {
+  font-family: Arial;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+
+  color: #2400ff;
+}
