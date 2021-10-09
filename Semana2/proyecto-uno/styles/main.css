@@ -1,0 +1,92 @@
+/*
+Selectores Globales
+*/
+body {
+  color: #000;
+  font-size: 16px;
+  font-family: Arial;
+}
+h2 {
+  font-size: 24px;
+}
+/*
+HEADER
+*/
+header {
+  background: #00af1c;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header a {
+  color: #ffffff;
+}
+header .header-logo {
+  font-size: 32px;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+}
+/*
+HOME
+*/
+.home {
+  padding: 20px;
+}
+.home h2 {
+  color: #3b06d2;
+}
+/*
+SERVICIOS
+*/
+.servicios {
+  padding: 20px;
+}
+.servicios h2 {
+  color: #d206b2;
+}
+.servicios ul {
+  padding-top: 15px;
+}
+.servicios ul .uno {
+  color: #ff0000;
+}
+/*
+PORTAFOLIO
+*/
+.portafolio {
+  padding: 20px;
+}
+.portafolio h2 {
+  color: #aad206;
+}
+.portafolio ul {
+  padding-top: 15px;
+}
+/*
+CONTACTO
+*/
+.contacto {
+  padding: 20px;
+}
+.contacto h2 {
+  color: #06d2c6;
+}
+/*
+FORMULARIO
+*/
+.formulario {
+  padding: 20px;
+}
+.formulario .name {
+  width: 1375px;
+  height: 35px;
+}
+/*FOOTER*/
+footer {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
