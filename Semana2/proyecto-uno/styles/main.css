@@ -53,6 +53,15 @@ SERVICIOS
 .servicios ul .uno {
   color: #ff0000;
 }
+.servicios .dos {
+  color: blue;
+}
+.servicios .tres {
+  color: orange;
+}
+.servicios .cuatro {
+  color: skyblue;
+}
 /*
 PORTAFOLIO
 */
@@ -64,6 +73,18 @@ PORTAFOLIO
 }
 .portafolio ul {
   padding-top: 15px;
+}
+.portafolio .uno {
+  color: #ae8800;
+}
+.portafolio .dos {
+  color: red;
+}
+.portafolio .tres {
+  color: blue;
+}
+.portafolio .cuatro {
+  color: green;
 }
 /*
 CONTACTO
@@ -81,8 +102,11 @@ FORMULARIO
   padding: 20px;
 }
 .formulario .name {
-  width: 1375px;
+  width: 100%;
   height: 35px;
+}
+textarea {
+  width: 100%;
 }
 /*FOOTER*/
 footer {
