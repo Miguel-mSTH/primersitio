@@ -9,6 +9,9 @@ body {
 h2 {
   font-size: 24px;
 }
+ul {
+  margin-left: 15px;
+}
 /*
 HEADER
 */
@@ -62,6 +65,9 @@ SERVICIOS
 .servicios .cuatro {
   color: skyblue;
 }
+.servicios ul {
+  list-style: disc;
+}
 /*
 PORTAFOLIO
 */
@@ -86,6 +92,9 @@ PORTAFOLIO
 .portafolio .cuatro {
   color: green;
 }
+.portafolio ul {
+  list-style: disc;
+}
 /*
 CONTACTO
 */
@@ -107,9 +116,14 @@ FORMULARIO
 }
 textarea {
   width: 100%;
+  margin-top: 10px;
+}
+button {
+  padding: 15px;
 }
 /*FOOTER*/
 footer {
+  background: #00af1c;
   padding: 20px;
   display: flex;
   justify-content: space-between;
