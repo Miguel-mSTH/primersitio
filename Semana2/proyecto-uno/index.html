@@ -5,37 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Proyecto-uno</title>
-    <link rel="stylesheet" href="./style/reset.css" />
-    <link rel="stylesheet" href="./style/main.css" />
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/main.css" />
   </head>
   <body>
     <header>
-      <a href="">LOGO</a>
+      <a class="header-logo" href="">LOGO</a>
       <nav>
         <ul>
           <li>
-            <a href="">Home</a>
+            <a href="#home">Home</a>
           </li>
         </ul>
         <ul>
           <li>
-            <a href="">Servicios</a>
+            <a href="#servicios">Servicios</a>
           </li>
         </ul>
         <ul>
           <li>
-            <a href="">Portafolio</a>
+            <a href="#portafolio">Portafolio</a>
           </li>
         </ul>
         <ul>
           <li>
-            <a href="">Contacto</a>
+            <a href="#contacto">Contacto</a>
           </li>
         </ul>
       </nav>
     </header>
     <main>
-      <section>
+      <section class="home">
         <h2>HOME</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sed
@@ -52,7 +52,7 @@
           <img src="./image/Rectangle 4.png" alt="imagen descriptiva3" />
         </div>
       </section>
-      <section>
+      <section class="servicios">
         <h2>SERVICIOS</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sed
@@ -77,16 +77,14 @@
           <img src="./image/Rectangle 6.png" alt="imagen descriptiva5" />
           <img src="./image/Rectangle 7.png" alt="imagen descriptiva6" />
         </div>
-      </section>
-      <section>
-        <ul>
-          <li>Servicios uno</li>
-          <li>Servicios dos</li>
-          <li>Servicios tres</li>
-          <li>Servicios cuatro</li>
+        <ul class="serv-dos">
+          <li class="uno">Servicios uno</li>
+          <li class="dos">Servicios dos</li>
+          <li class="tres">Servicios tres</li>
+          <li class="cuatro">Servicios cuatro</li>
         </ul>
       </section>
-      <section>
+      <section class="portafolio">
         <h2>Portafolio</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sed
@@ -111,16 +109,14 @@
           <img src="./image/Rectangle 9.png" alt="imagen descriptiva8" />
           <img src="./image/Rectangle 10.png" alt="imgen descriptiva9" />
         </div>
-      </section>
-      <section>
-        <ul>
-          <li>Servicios uno</li>
-          <li>Servicios dos</li>
-          <li>Servicios tres</li>
-          <li>Servicios cuatro</li>
+        <ul class="serv-dos">
+          <li class="uno">Servicios uno</li>
+          <li class="dos">Servicios dos</li>
+          <li class="tres">Servicios tres</li>
+          <li class="cuatro">Servicios cuatro</li>
         </ul>
       </section>
-      <section>
+      <section class="contacto">
         <h2>Contacto</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sed
@@ -132,14 +128,19 @@
           pulvinar in cursus commodo.
         </p>
       </section>
-      <section>
+      <section class="formulario">
         <form action="">
-          <input type="text" placeholder="Nombre y apellido" name="nombre" />
+          <input
+            class="name"
+            type="text"
+            placeholder="Nombre y apellido"
+            name="nombre"
+          />
           <textarea
             name="detalle"
             id=""
-            cols="30"
-            rows="10"
+            cols="170"
+            rows="15"
             placeholder="Detalle"
           ></textarea>
           <button type="submit">Enviar</button>
