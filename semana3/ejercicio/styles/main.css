@@ -16,59 +16,73 @@ h2 {
   font-size: 34px;
   text-align: center;
 }
+
 h3 {
   font-size: 30px;
 }
+
 p {
   color: #9c9c9c;
 }
+
 button {
   margin-top: 10px;
   padding: 10px;
 }
+
 section {
   margin-top: 20px;
   margin-bottom: 20px;
 }
+
 footer {
   text-align: center;
 }
+
 /*section one*/
 .section-one {
   text-align: center;
 }
+
 /*section two*/
 .section-two {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 .section-two div {
   margin-left: 20px;
 }
+
 /*sectiom three*/
 .section-three {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 .section-three img {
   margin-left: 20px;
 }
+
 /*section four*/
 .section-four {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 .section-four div {
   margin-left: 20px;
 }
+
 /*section five*/
 .section-five {
   margin-top: 20px;
 }
 
+/*FOOTER*/
 footer img {
   margin: 10px;
 }
