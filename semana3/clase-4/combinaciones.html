@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Combinaciones</title>
+    <style>
+      ul {
+        padding: 0;
+      }
+      ul li a {
+        background: red;
+      }
+      ul li:first-child {
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li><a href="">1</a></li>
+      <li>2</li>
+      <li>3</li>
+      <li>4</li>
+      <li>5</li>
+      <li>6</li>
+      <li>7</li>
+      <li>8</li>
+      <li>9</li>
+      <li>10</li>
+    </ul>
+    <style>
+      /*atrapa a los hijos primarios*/
+      ul > li {
+        border-top: 5px solid red;
+      }
+    </style>
+    <ul>
+      <li>Underddd</li>
+      <li>underrr</li>
+      <ol>
+        <li>Item 1</li>
+        <li>Item 2</li>
+      </ol>
+    </ul>
+    <style>
+      /*atrapa a primer p despues de un h2*/
+      h2 + p {
+        color: red;
+      }
+    </style>
+    <h2>TITULO</h2>
+    <p>lorem sss</p>
+    <p>lorem sss</p>
+    <p>lorem sss</p>
+    <style>
+      /*atrapa a todos los p despues de un h3*/
+      h3 ~ p {
+        color: green;
+      }
+    </style>
+    <h3>TITULO H3</h3>
+    <p>Lorem ipsum</p>
+    <p>Lorem ipsum</p>
+    <hr />
+    <h3>TUTULO H3</h3>
+    <p>lorem ipsum</p>
+    <p>lorem ipsum</p>
+    <hr />
+
+    <style>
+      h4,
+      h4 + p,
+      blockquote {
+        color: red;
+        padding: 20px;
+      }
+    </style>
+
+    <h4>titulo h4</h4>
+    <p>lorem</p>
+    <blockquote>lorem</blockquote>
+  </body>
+</html>
