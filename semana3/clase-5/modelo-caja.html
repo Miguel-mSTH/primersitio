@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modelo de caja</title>
+    <style>
+      * {
+        box-sizing: border-box; /*no cambia el tamaño de la caja*/
+      }
+      .wrapper {
+        max-width: 440px;
+        /*background: red;*/
+        background-repeat: repeat;
+        background-position: 10px 10px; /*x(horizontal) - y(vertical) lo mueve en los ejes tambien se pueden poner en porcentajes*/
+        background: url(./images/startransparent.gif) red 0 0 no-repeat;
+        /*
+        padding-top=20px
+        padding-left=20px
+        paddinf-right=20px
+        padding-bottom=20px
+        se pone en sentido horario*/
+        padding: 20px;
+        border: 10px solid orange;
+        margin: 0 auto 50px;
+        overflow-y: auto; /*desbordamiento de la caja*/
+      }
+      h1 {
+        text-align: left; /*left,right,center,justify*/
+        visibility: visible; /*visible-hidden*/
+        /*
+        hidden oculta el titulo pero no el espacio ocupado
+        none oculta el contenido y el espacio ocupado
+        */
+      }
+      a {
+        display: block; /*block,inline,none*/
+
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1>TITULO</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci minima
+        saepe aliquam praesentium modi doloremque necessitatibus, commodi qui.
+        Facere deleniti optio expedita commodi, itaque labore? Molestiae saepe
+        nobis aspernatur commodi?
+      </p>
+      <div>
+        <h2>Titulo h2</h2>
+        <a href="">Link</a>
+        <a href="">Link2 lsadsadasdasd</a>
+        <a href="">Link3</a>
+      </div>
+    </div>
+  </body>
+</html>
