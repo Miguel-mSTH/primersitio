@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>POSITION</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      .box {
+        width: 400px;
+        height: 400px;
+        background: green;
+        position: relative;
+      }
+      .box div {
+        position: absolute;
+        background: red;
+        width: 80%;
+        height: 80%;
+        left: 10%;
+        top: 10%;
+        /*con valores negativos saldrian de la caja*/
+      }
+      header {
+        position: fixed;
+        background: pink;
+        left: 0;
+        top: 0;
+        width: 100%;
+        z-index: 1;
+        padding: 20px;
+      }
+      html {
+        height: 200%;
+      }
+      body {
+        padding-top: 140px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Titulo</h1>
+    </header>
+    <div class="box">
+      <div>BLOQUE UNO</div>
+    </div>
+  </body>
+</html>

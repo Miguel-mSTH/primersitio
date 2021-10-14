@@ -1,0 +1,163 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  height: 200%;
+}
+.head-fixed {
+  background: purple;
+  text-align: center;
+  position: fixed;
+  top: 5px;
+  left: 5px;
+  align-items: center;
+  font-size: 10px;
+  padding: 10px;
+}
+h1,
+h3 {
+  font-family: "Roboto", sans-serif;
+  color: white;
+}
+
+.father {
+  width: 400px;
+  height: 800px;
+  position: relative;
+  left: 60%;
+  right: 10%;
+  top: 50px;
+}
+.head {
+  position: absolute;
+  background: grey;
+  width: 60%;
+  height: 25%;
+  left: 20%;
+}
+.eye-left {
+  position: absolute;
+  background: red;
+  width: 30%;
+  height: 30%;
+  left: 10%;
+  top: 10%;
+}
+.eye-right {
+  position: absolute;
+  background: red;
+  width: 30%;
+  height: 30%;
+  right: 10%;
+  top: 10%;
+}
+.mouth {
+  position: absolute;
+  background: crimson;
+  width: 60%;
+  height: 15%;
+  top: 60%;
+  left: 20%;
+}
+.body {
+  position: absolute;
+  background: crimson;
+  width: 80%;
+  height: 40%;
+  top: 25%;
+  left: 10%;
+}
+.arm-left {
+  position: absolute;
+  background: grey;
+  width: 50%;
+  height: 20%;
+  top: 10%;
+  left: -10%;
+}
+.arm-right {
+  position: absolute;
+  background: grey;
+  width: 50%;
+  height: 20%;
+  top: 10%;
+  right: -10%;
+}
+
+.finger-one-left,
+.finger-two-left,
+.finger-three-left {
+  position: absolute;
+  background: orange;
+  width: 15%;
+  height: 15%;
+  right: -7%;
+}
+.finger-one-left,
+.finger-one-right {
+  top: 15%;
+}
+.finger-two-left,
+.finger-two-right {
+  top: 40%;
+}
+.finger-three-left,
+.finger-three-right {
+  top: 65%;
+}
+
+.finger-one-right,
+.finger-two-right,
+.finger-three-right {
+  position: absolute;
+  background: orange;
+  width: 15%;
+  height: 15%;
+  left: -7%;
+}
+
+.leg-left {
+  position: absolute;
+  background: grey;
+  width: 20%;
+  height: 50%;
+  bottom: -40%;
+  left: 10%;
+}
+.leg-right {
+  position: absolute;
+  background: grey;
+  width: 20%;
+  height: 50%;
+  bottom: -40%;
+  right: 10%;
+}
+.feet-left,
+.feet-right {
+  position: absolute;
+  background: orange;
+  width: 120%;
+  height: 20%;
+  left: -20%;
+  top: 100%;
+}
+
+.follow {
+  background: purple;
+  text-align: center;
+  position: fixed;
+  top: 90%;
+  left: 5px;
+  align-items: center;
+  font-size: 10px;
+  padding: 10px;
+  width: 10%;
+}
+.fa-twitter {
+  font-size: 30px;
+  color: white;
+}
+.fa-facebook {
+  font-size: 30px;
+  color: white;
+}
