@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex Shrink</title>
+    <style>
+      .box {
+        width: 400px;
+        background: pink;
+        display: flex;
+      }
+      .box div {
+        width: 200px;
+      }
+      .box div:nth-child(odd) {
+        /*pares*/
+        background: red;
+      }
+      .box div:nth-child(even) {
+        /*impares*/
+        background: yellow;
+      }
+      /*
+      espacio no disponible del width del padre=400px(saldria de la suma de los div que son 4 * 200(espacio por cada uno) menos 400 quien el ancho padre)
+      
+      total suma flex-shrink=4(por cada uno de los div)
+
+      unit-grow=400px/4
+    
+      al final seria 100(unit-grow)- 200(width de div)
+      el shrink le quita 100 al witdh
+      */
+
+      .box div:first-child {
+      }
+      .box div:last-child {
+      }
+
+      /*
+      sleccionando a la caja 3 para aplicar el flex-grow
+      .box div:nth-child(3){
+          flex-grow: 1;
+      }
+      */
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+    </div>
+  </body>
+</html>

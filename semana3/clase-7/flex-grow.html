@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex Grow</title>
+    <style>
+      .box {
+        width: 400px;
+        background: pink;
+        display: flex;
+      }
+      .box div {
+        width: 100px;
+      }
+      .box div:nth-child(odd) {
+        /*pares*/
+        background: red;
+      }
+      .box div:nth-child(even) {
+        /*impares*/
+        background: yellow;
+      }
+      /*
+      espacio disponible del width del padre=200px
+      total suma flex-grow=1
+
+      unit-grow=200px/1
+      */
+
+      .box div:first-child {
+        flex-grow: 1;
+      }
+      .box div:last-child {
+        flex-grow: 1;
+      }
+
+      /*
+      sleccionando a la caja 3 para aplicar el flex-grow
+      .box div:nth-child(3){
+          flex-grow: 1;
+      }
+      */
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <div>1</div>
+      <div>2</div>
+    </div>
+  </body>
+</html>
