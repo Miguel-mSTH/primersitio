@@ -1,23 +1,30 @@
+.wrapper {
+  width: 900px;
+  margin: auto;
+}
+
 h1 {
   font-size: 28px;
   color: white;
 }
 h3 {
   font-size: 18px;
-  color: blueviolet;
+  color: white;
 }
 p {
-  color: red;
+  color: white;
 }
 header {
   display: flex;
-  flex-direction: row;
   position: fixed;
   justify-content: space-between;
-  width: 100%;
   top: 0;
-  left: 0;
   height: 30px;
+  width: 900px;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
 }
 
 body {
@@ -103,11 +110,32 @@ section 2
   margin-bottom: -5px;
 }
 
-/*GRID*/
-.grid div {
+/*
+SECTION 3
+GRID*/
+.sec3 {
+  width: 100%;
+}
+.grid {
   display: grid;
-  grid-template-columns: 50px 50px;
-  grid-template-rows: 80px;
+  grid-template-columns: 45% 45%;
+  grid-template-rows: 100px 100px 100px 100px 100px 100px;
+  gap: 5%;
+  justify-content: center;
+}
+.sec3-rect {
+  position: relative;
+  display: flex;
+}
+.sec3-rect img {
+  width: 100%;
+}
+.sec3-rect div {
+  position: absolute;
+  flex-direction: column;
+  height: 100%;
+  left: 1%;
+  right: 1%;
 }
 
 /*FOOTER*/
@@ -115,4 +143,5 @@ footer {
   display: flex;
   justify-content: space-between;
   background: blueviolet;
+  margin-top: 180px;
 }
