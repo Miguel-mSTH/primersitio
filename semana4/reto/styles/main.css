@@ -4,10 +4,10 @@ h1 {
 }
 h3 {
   font-size: 18px;
-  color: white;
+  color: blueviolet;
 }
 p {
-  color: white;
+  color: red;
 }
 header {
   display: flex;
@@ -101,4 +101,18 @@ section 2
 }
 .sec2-3 h3 {
   margin-bottom: -5px;
+}
+
+/*GRID*/
+.grid div {
+  display: grid;
+  grid-template-columns: 50px 50px;
+  grid-template-rows: 80px;
+}
+
+/*FOOTER*/
+footer {
+  display: flex;
+  justify-content: space-between;
+  background: blueviolet;
 }
