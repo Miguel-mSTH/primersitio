@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .wrapper {
+        width: 100%;
+        height: 100%;
+        margin: auto;
+      }
+      header {
+        width: 100%;
+        display: flex;
+        text-align: center;
+      }
+      h1 {
+        background: grey;
+        width: 100%;
+        font-size: 34px;
+      }
+      main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      main div {
+        width: 40%;
+        margin: 1%;
+        background: grey;
+        height: 50px;
+      }
+      footer {
+        background: grey;
+        height: 50px;
+      }
+
+      /*<872*/
+      @media (max-width: 872px) {
+        main div {
+          background: red;
+        }
+        h1 {
+          font-size: 24px;
+        }
+      }
+
+      /*476px*/
+      @media (max-width: 476px) {
+        main div {
+          width: 100%;
+          background: orange;
+        }
+        h1 {
+          font-size: 16px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>TITULO PRINCIPAL</h1>
+      </header>
+      <main>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </main>
+      <footer></footer>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        background: red;
+      }
+      /*
+    PUNTOS DE QUIEBRE
+    MOBILE XS // 0 > 320 PX
+    MOBILE SM // 320PX > 480PX
+    MOBILE LARGE // 481 > 680PX
+    TABLET // 680PX > 830PX
+    DESKTOP // 841PX > TAMAÑO DEL LAYAOUT
+    DESKTOP XL // TAMAÑO DEL LAYAOUT > TAMAÑO QUE DESEAS  
+        */
+
+      /*
+        mayor a 320px
+        */
+      @media (min-width: 320px) {
+        /*div{
+            backgroud:orange;
+            }*/
+      }
+
+      /*
+        menor 780px
+        */
+      @media (max-width: 780px) {
+        /*div{
+            background:blue;}
+            */
+      }
+
+      /*
+        mayor a 400px
+        */
+      @media (min-height: 400px) {
+        /* div {
+            backgroud:blue;
+            }
+            */
+      }
+
+      /*
+        menor a 800px
+        */
+      @media (max-height: 800px) {
+        div {
+          background: brown;
+        }
+      }
+
+      @media (orientation: landscape) {
+        /*horizontal*/
+        div {
+          color: white;
+        }
+      }
+
+      @media (orientation: portrait) {
+        div {
+          color: blue;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <header>header</header>
+      <main>main</main>
+      <footer>footer</footer>
+    </div>
+  </body>
+</html>
