@@ -46,7 +46,7 @@ nav a {
 
 /*360px*/
 
-@media (max-width: 360px) {
+@media (max-width: 375px) {
   .wrapper {
     width: 360px;
   }
