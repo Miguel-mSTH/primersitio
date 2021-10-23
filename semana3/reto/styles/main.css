@@ -1,3 +1,7 @@
+.wrapper {
+  width: 960px;
+  margin: auto;
+}
 h2 {
   text-align: center;
 }
@@ -13,8 +17,8 @@ header {
   align-items: center;
   position: fixed;
   top: 0;
-  left: 0;
-  width: 100%;
+  width: 960px;
+  z-index: 4;
 }
 .header {
   display: flex;
@@ -43,11 +47,34 @@ nav a {
 SECTIONS*/
 .section-one {
   margin-top: 100px;
+  z-index: 1;
+  margin-bottom: 10px;
 }
-.section-one h1 {
-  align-items: center;
+.prueba12 {
+  position: relative;
+  display: flex;
 }
-
+.prueba12 div {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.prueba12 h1 {
+  text-align: center;
+  font-size: 64px;
+  color: white;
+}
+.prueba12 p {
+  background: rgba(114, 153, 254, 0.5);
+  width: 29.6%;
+  font-size: 36px;
+  color: white;
+  position: absolute;
+  left: 14%;
+  display: flex;
+  top: 150%;
+}
 /*
 section 2
 */
@@ -148,36 +175,47 @@ section 3
   margin: 10px;
 }
 
+/*SECTION SIX*/
 .section-six {
   background: #16a085;
-}
-form {
-  width: 80%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  margin-left: 18%;
+  width: 100%;
+}
+.wrapper2 {
+  width: 100%;
+}
+.name {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .name input {
-  width: 40%;
-  height: 20px;
-  margin: auto;
+  width: 45%;
+  margin: 5px;
+  height: 40px;
 }
-.telefono input {
-  width: 40%;
-  height: 20px;
-}
-.descrip input {
-  width: 82%;
-  height: 60px;
-}
-button {
-  width: 20%;
+.descrip {
+  width: 100%;
   display: flex;
   justify-content: center;
-  height: 20px;
 }
-
+.descrip input {
+  width: 92%;
+  height: 80px;
+  margin: 5px;
+}
+.enviar {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.enviar button {
+  height: 39px;
+  width: 15%;
+}
 /*  
 FOOTER
 */
