@@ -1,0 +1,141 @@
+.wrapper {
+  width: 960px;
+  margin: auto;
+}
+h3 {
+  color: #0098ef;
+}
+h5 {
+  font-family: Poppins;
+}
+a {
+  color: black;
+}
+header {
+  display: flex;
+  padding: 20px;
+  justify-content: space-between;
+}
+nav {
+  display: flex;
+  text-align: center;
+}
+.logo {
+  position: relative;
+  width: 46px;
+}
+.logo img {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo img:last-child {
+  display: flex;
+  left: 30px;
+  top: 10px;
+}
+.logo img:nth-child(4) {
+  left: 12px;
+}
+.logo img:nth-child(3) {
+  left: 8px;
+}
+.logo img:nth-child(2) {
+  left: 4px;
+}
+.nav ul {
+  list-style: none;
+}
+.nav a {
+  text-decoration: none;
+}
+.nav a:hover {
+  border-bottom: 5px solid;
+}
+.nav .first:hover {
+  color: #832fda;
+}
+.nav .two:hover {
+  color: #00cf95;
+}
+.nav .three:hover {
+  color: #0098ef;
+}
+.nav .four:hover {
+  color: #6fd519;
+}
+.nav .five:hover {
+  color: #e56a1e;
+}
+
+/*SECTION 1*/
+.wrapper-description {
+  width: 88%;
+  margin: auto;
+  display: flex;
+}
+.section-one h2 {
+  font-size: 32px;
+  width: 82%;
+  font-family: Poppins;
+  margin-top: -5px;
+}
+.section-one h2 span {
+  color: #00cf95;
+}
+.description .letra {
+  display: flex;
+  justify-content: space-between;
+  margin-top: -15px;
+  width: 85%;
+  margin-bottom: 10px;
+}
+.description p {
+  font-size: 13px;
+  font-family: Raleway;
+}
+.description .button {
+  display: flex;
+  justify-content: space-around;
+}
+.description button {
+  background: #6d0ad3;
+  padding: 10px;
+  border: none;
+  color: white;
+  width: 150px;
+}
+.button img {
+  margin: 7px;
+}
+.description .letra div {
+  border-left: 5px solid #00cf95;
+  width: 40px;
+}
+.section-one .imagen {
+  display: flex;
+  align-items: center;
+}
+.section-one .imagen img {
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 50%;
+  box-shadow: 10px -5px #d1ffa2;
+  height: 270px;
+}
+.section-one .like {
+  margin-top: 20px;
+  text-align: center;
+}
+.section-one .down {
+  text-align: center;
+  margin-top: 30px;
+}
+.section-one .down button {
+  border: none;
+  background: white;
+}
+.section-one .down p {
+  color: #00cf95;
+}
