@@ -1,0 +1,35 @@
+/*
+VARIABLES
+*/
+$color-primary: skyblue;
+$color-link: yellow;
+$color-info: blue;
+$color-success: green;
+$color-warning: orange;
+$color-danger: red;
+
+.buttons {
+  button {
+    color: white;
+    border: none;
+    padding: 50px;
+  }
+  .is-primary {
+    background: $color-primary;
+  }
+  .is-link {
+    background: $color-link;
+  }
+  .is-info {
+    background: $color-info;
+  }
+  .is-success {
+    background: $color-success;
+  }
+  .is-warning {
+    background: $color-warning;
+  }
+  .is-danger {
+    background: $color-danger;
+  }
+}

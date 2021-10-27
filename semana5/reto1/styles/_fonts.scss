@@ -1,0 +1,9 @@
+$fonts: (
+  titulo: verdana,
+  texto: arial,
+);
+
+@mixin font-color($font-size: 24px, $color: #081f32) {
+  font-size: $font-size;
+  color: $color;
+}

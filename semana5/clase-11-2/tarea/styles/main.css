@@ -1,0 +1,97 @@
+/*
+VARIABLES
+*/
+.buttons button {
+  color: white;
+  border: none;
+  padding: 50px;
+}
+
+.buttons .is-primary {
+  background: skyblue;
+}
+
+.buttons .is-link {
+  background: yellow;
+}
+
+.buttons .is-info {
+  background: blue;
+}
+
+.buttons .is-success {
+  background: green;
+}
+
+.buttons .is-warning {
+  background: orange;
+}
+
+.buttons .is-danger {
+  background: red;
+}
+
+/*
+VARIABLES
+*/
+.buttons button {
+  color: white;
+  border: none;
+  padding: 50px;
+}
+
+.buttons .is-primary {
+  background: skyblue;
+}
+
+.buttons .is-link {
+  background: yellow;
+}
+
+.buttons .is-info {
+  background: blue;
+}
+
+.buttons .is-success {
+  background: green;
+}
+
+.buttons .is-warning {
+  background: orange;
+}
+
+.buttons .is-danger {
+  background: red;
+}
+
+.card {
+  border: 1px solid black;
+  width: 100%;
+}
+
+.card .card-img-top {
+  background: skyblue;
+  width: 100%;
+  height: 100px;
+}
+
+.card .card-body {
+  padding: 20px;
+}
+
+.card .card-body .card-title {
+  text-align: center;
+}
+
+.card .btn-primary {
+  color: white;
+  background: blue;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.card .btn-primary:hover {
+  color: red;
+  background: yellow;
+}
+/*# sourceMappingURL=main.css.map */

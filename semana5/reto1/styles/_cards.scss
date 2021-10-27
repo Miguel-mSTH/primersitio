@@ -1,0 +1,168 @@
+@import "_fonts.scss";
+@import "_border.scss";
+@import "_color.scss";
+
+header {
+  text-align: center;
+  h1 {
+    font-size: 48px;
+    color: #15cfbb;
+  }
+}
+
+.section-1 {
+  display: flex;
+  justify-content: center;
+}
+.card-one,
+.card-two,
+.card-three {
+  background: #fff;
+  font-family: map-get($fonts, titulo);
+  width: 30%;
+  margin: 8px;
+  border-radius: 20px;
+
+  img {
+    width: 100%;
+  }
+  .info-wrapper {
+    width: 90%;
+    margin: auto;
+
+    p {
+      font-family: map-get($fonts, texto);
+      @include font-color(16px, map-get($color, color-text));
+    }
+
+    .info {
+      display: flex;
+      justify-content: space-between;
+      color: map-get($color, color-info);
+    }
+    .price {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      p:first-child {
+        @include font-color(24px, map-get($color, color-title));
+      }
+      p:nth-child(2) {
+        @include font-color(20px, map-get($color, color-desc));
+      }
+      button {
+        width: 40%;
+        color: white;
+        background: map-get($color, color-button);
+        border: none;
+        border-radius: 5px;
+        height: 44px;
+      }
+    }
+  }
+}
+
+/*SECTION 2*/
+.section-2 {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+}
+
+.card-four {
+  width: 42%;
+}
+.card-five {
+  width: 48%;
+}
+.card-four,
+.card-five {
+  margin: 8px;
+  border-radius: 20px;
+  background: #fff;
+
+  .imagen {
+    display: flex;
+    justify-content: end;
+    .principal {
+      width: 100%;
+      height: 250px;
+      position: relative;
+    }
+    div {
+      position: absolute;
+    }
+  }
+  .info-wrapper {
+    width: 90%;
+    margin: auto;
+    .title {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      img {
+        background: #007ae9;
+        border-radius: 50%;
+        width: 15px;
+        padding: 2px;
+      }
+    }
+    .calification {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+
+      .star {
+        width: 65%;
+        .budget {
+          background: #007ae9;
+          color: white;
+        }
+        button {
+          margin: 5px;
+          border: none;
+          padding: 6px;
+          border-radius: 4px;
+          color: #007ae9;
+        }
+      }
+      .price {
+        display: flex;
+        text-align: end;
+        height: 80px;
+        align-items: end;
+        p {
+          font-size: 30px;
+          margin: 0;
+          span {
+            font-size: 18px;
+            color: #b1b4b9;
+          }
+        }
+      }
+    }
+    .description {
+      height: 180px;
+      p {
+        color: map-get($color, color-text);
+      }
+      .save {
+        color: map-get($color, color-button);
+        text-align: center;
+      }
+    }
+    .btn {
+      .select {
+        background: map-get($color, color-button);
+        border: none;
+        width: 100%;
+        height: 50px;
+        margin: 5px;
+        border-radius: 20px;
+        @include font-color(17px, white);
+        margin-bottom: 30px;
+      }
+    }
+  }
+}

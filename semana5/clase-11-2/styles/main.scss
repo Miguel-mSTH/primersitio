@@ -1,0 +1,176 @@
+/*COLORS*/
+$color-red: pink;
+/*
+FONTS
+*/
+$font-family-primary: "arial";
+$font-family-secondary: "verdana";
+
+body {
+  color: $color-red;
+  font-size: 13px;
+  font-family: arial;
+}
+
+a {
+  color: $color-red;
+}
+
+p {
+  font-size: 13px;
+  font-family: $font-family-primary;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: $font-family-secondary;
+}
+/*
+HEADER
+*/
+
+header {
+  &:hover {
+    //& llama al mismo osea a header
+    background: blue($color: #000000);
+  }
+
+  a {
+    text-decoration: none;
+
+    &:hover {
+      background: brown;
+    }
+  }
+
+  ul {
+    padding: 20px;
+  }
+
+  > li {
+    color: red;
+  }
+
+  .nombre-clase {
+    color: pink;
+  }
+
+  ul {
+    li {
+      background: blue;
+      margin-right: 20px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      &:first-child {
+        margin-left: 20px;
+      }
+
+      &:hover {
+        background: green;
+      }
+    }
+  }
+}
+
+/*EXTEND*/
+
+%boxRed {
+  padding: 20px;
+  background: red;
+}
+
+%otrosEstilos {
+  padding: 30px;
+  background: chocolate;
+}
+
+main,
+footer {
+  @extend %boxRed;
+}
+
+header {
+  @extend %otrosEstilos;
+}
+
+/*INTERPOLATION*/
+
+$url-base: "https://larepublica.pe"; /*podria la url principal cambiarse por eso en esos caos se usa interpolation*/
+div {
+  background: url("#{$url-base}/mi-imagen.png");
+}
+
+/*MIXINGS*/
+/*Es una funcion (plantilla configurable)*/
+@mixin box-color($padding: 0px, $color: red) {
+  padding: $padding;
+  color: $color;
+}
+
+div {
+  @include box-color();
+}
+div {
+  @include box-color(20px, orange);
+}
+
+/*CONDITIONS*/
+$font-size-h1: 34px;
+$font-size-h2: 24px;
+$font-size-h3: 18px;
+$font-size-h4: 16px;
+$font-size-base: 13px;
+
+@mixin font-tittle($tag-title) {
+  @if ($tag-title == h1) {
+    font-size: $font-size-h1;
+  } @else if($tag-title == h2) {
+    font-size: $font-size-h2;
+  } @else if($tag-title == h3) {
+    font-size: $font-size-h3;
+  } @else if($tag-title == h4) {
+    font-size: $font-size-h4;
+  } @else {
+    font-size: $font-size-base;
+  }
+}
+
+h1 {
+  @include font-tittle(h1);
+}
+h2 {
+  @include font-tittle(h2);
+}
+
+/*
+HELPERS
+*/
+/*listas*/
+$colors: red, blue, green, yellow;
+
+@each $variable in $colors {
+  .color-#{$variable} {
+    color: $variable;
+  }
+}
+
+/*MAPS*/
+$color-aasd: (
+  primary: blue,
+  secondary: skyblue,
+);
+
+@each $key, $value in $color-aasd {
+  .color-#{$key} {
+    color: $value;
+  }
+}
+
+.ejemplo-map {
+  color: map-get($color-aasd, secondary);
+}

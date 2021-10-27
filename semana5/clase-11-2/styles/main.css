@@ -1,0 +1,142 @@
+/*COLORS*/
+/*
+FONTS
+*/
+body {
+  color: pink;
+  font-size: 13px;
+  font-family: arial;
+}
+
+a {
+  color: pink;
+}
+
+p {
+  font-size: 13px;
+  font-family: "arial";
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "verdana";
+}
+
+/*
+HEADER
+*/
+header:hover {
+  background: 0;
+}
+
+header a {
+  text-decoration: none;
+}
+
+header a:hover {
+  background: brown;
+}
+
+header ul {
+  padding: 20px;
+}
+
+header > li {
+  color: red;
+}
+
+header .nombre-clase {
+  color: pink;
+}
+
+header ul li {
+  background: blue;
+  margin-right: 20px;
+}
+
+header ul li:last-child {
+  margin-right: 0;
+}
+
+header ul li:first-child {
+  margin-left: 20px;
+}
+
+header ul li:hover {
+  background: green;
+}
+
+/*EXTEND*/
+main,
+footer {
+  padding: 20px;
+  background: red;
+}
+
+header {
+  padding: 30px;
+  background: chocolate;
+}
+
+/*INTERPOLATION*/
+/*podria la url principal cambiarse por eso en esos caos se usa interpolation*/
+div {
+  background: url("https://larepublica.pe/mi-imagen.png");
+}
+
+/*MIXINGS*/
+/*Es una funcion (plantilla configurable)*/
+div {
+  padding: 0px;
+  color: red;
+}
+
+div {
+  padding: 20px;
+  color: orange;
+}
+
+/*CONDITIONS*/
+h1 {
+  font-size: 34px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+/*
+HELPERS
+*/
+/*listas*/
+.color-red {
+  color: red;
+}
+
+.color-blue {
+  color: blue;
+}
+
+.color-green {
+  color: green;
+}
+
+.color-yellow {
+  color: yellow;
+}
+
+/*MAPS*/
+.color-primary {
+  color: blue;
+}
+
+.color-secondary {
+  color: skyblue;
+}
+
+.ejemplo-map {
+  color: skyblue;
+}
+/*# sourceMappingURL=main.css.map */
