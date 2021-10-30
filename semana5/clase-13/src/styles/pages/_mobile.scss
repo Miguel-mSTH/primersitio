@@ -1,0 +1,37 @@
+@media (min-width: 360px) and (max-width: 810px) {
+  .wrapper {
+    width: 360px;
+    margin: auto;
+  }
+  header {
+    background: orange;
+  }
+  main {
+    .section-two {
+      display: inline-block;
+      .section-left {
+        width: 95%;
+      }
+      .section-right {
+        width: 100%;
+        div {
+          display: flex;
+          flex-direction: column;
+          .div-left {
+            display: flex;
+            width: 100%;
+            flex-direction: row;
+          }
+          .div-right {
+            width: 70%;
+            flex-direction: row;
+            justify-content: space-around;
+            margin-left: 30%;
+            margin-top: 0;
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+}

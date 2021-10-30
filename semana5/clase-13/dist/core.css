@@ -1,0 +1,199 @@
+.img {
+  width: 100%;
+  height: 100px;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.img-div {
+  width: 90px;
+}
+
+.btn {
+  background: #1e86ff;
+  color: white;
+  border: 1px solid #1e86ff;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.btn-full {
+  width: 80px;
+  background: white;
+  color: black;
+  border: 1px solid black;
+}
+
+.btn-footer:hover {
+  background: white;
+  color: #1e86ff;
+}
+
+.input {
+  width: 100%;
+  height: 30px;
+}
+
+.input-location {
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+.radio {
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper {
+  background: #f3f6f7;
+}
+
+.div {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  background: orange;
+  box-sizing: border-box;
+}
+.div .div-left {
+  display: flex;
+  width: 70%;
+}
+.div .div-left div {
+  display: flex;
+  flex-direction: column;
+  margin-left: 2%;
+  padding: 3px;
+}
+.div .div-left h4 {
+  font-size: 14px;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+.div .div-left h3 {
+  font-size: 18px;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+.div .div-right {
+  width: 30%;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+.div .div-right p {
+  color: #b9bdcf;
+}
+
+header {
+  background: skyblue;
+}
+header h1 {
+  font-size: 24px;
+}
+header h1 span {
+  color: grey;
+}
+
+@media (min-width: 360px) and (max-width: 810px) {
+  .wrapper {
+    width: 360px;
+    margin: auto;
+  }
+}
+.wrapper {
+  margin: auto;
+  padding: 10px;
+}
+
+main .section-one {
+  position: relative;
+  display: flex;
+}
+main .section-one .job-search {
+  display: flex;
+  position: absolute;
+  width: 90%;
+  top: 30%;
+  left: 5%;
+}
+main .section-two {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+main .section-two .section-left {
+  width: 30%;
+}
+main .section-two .section-left h3 {
+  color: #b9bdcf;
+}
+main .section-two .section-right {
+  width: 60%;
+}
+main .section-three {
+  width: 97.5%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+/*
+poner el footer siempre abajo pegado a la pantalla
+
+.wrapper{
+  height:100vh;
+  margin:auto;
+  max-width-940px;
+  display:flex;
+  flex-direction:column;
+}
+.main{
+  flex-grow:1 (Agarra el espacio sobrante)Depende de la direccion del flex
+}
+*/
+footer {
+  text-align: center;
+}
+footer p {
+  color: #b9bdcf;
+}
+
+@media (min-width: 360px) and (max-width: 810px) {
+  .wrapper {
+    width: 360px;
+    margin: auto;
+  }
+
+  header {
+    background: orange;
+  }
+
+  main .section-two {
+    display: inline-block;
+  }
+  main .section-two .section-left {
+    width: 95%;
+  }
+  main .section-two .section-right {
+    width: 100%;
+  }
+  main .section-two .section-right div {
+    display: flex;
+    flex-direction: column;
+  }
+  main .section-two .section-right div .div-left {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+  }
+  main .section-two .section-right div .div-right {
+    width: 70%;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-left: 30%;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+/*# sourceMappingURL=core.css.map */

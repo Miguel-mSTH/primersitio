@@ -1,0 +1,59 @@
+@media (min-width: 360px) and (max-width: 810px) {
+  .wrapper {
+    width: 360px;
+    margin: auto;
+  }
+}
+.wrapper {
+  margin: auto;
+  padding: 10px;
+}
+
+main {
+  .section-one {
+    position: relative;
+    display: flex;
+
+    .job-search {
+      display: flex;
+      position: absolute;
+      width: 90%;
+      top: 30%;
+      left: 5%;
+    }
+  }
+  .section-two {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    .section-left {
+      width: 30%;
+      h3 {
+        color: #b9bdcf;
+      }
+    }
+    .section-right {
+      width: 60%;
+    }
+  }
+  .section-three {
+    width: 97.5%;
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+/*
+poner el footer siempre abajo pegado a la pantalla
+
+.wrapper{
+  height:100vh;
+  margin:auto;
+  max-width-940px;
+  display:flex;
+  flex-direction:column;
+}
+.main{
+  flex-grow:1 (Agarra el espacio sobrante)Depende de la direccion del flex
+}
+*/

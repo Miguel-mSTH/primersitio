@@ -1,0 +1,39 @@
+.div {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  background: orange;
+  box-sizing: border-box;
+  .div-left {
+    display: flex;
+    width: 70%;
+
+    div {
+      display: flex;
+      flex-direction: column;
+      margin-left: 2%;
+      padding: 3px;
+    }
+
+    h4 {
+      font-size: 14px;
+      margin-bottom: 0;
+      margin-top: 0;
+    }
+
+    h3 {
+      font-size: 18px;
+      margin-bottom: 0;
+      margin-top: 0;
+    }
+  }
+  .div-right {
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    p {
+      color: #b9bdcf;
+    }
+  }
+}
