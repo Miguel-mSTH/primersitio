@@ -117,4 +117,55 @@ footer {
   text-align: center;
 }
 
+@media (min-width: 360px) and (max-width: 810px) {
+  .wrapper {
+    width: 360px;
+    margin: auto;
+    height: 100%;
+  }
+
+  main {
+    padding: 0 10px 0 0;
+    flex-direction: column;
+  }
+  main .section {
+    margin-top: 15px;
+    margin-left: 15px;
+  }
+  main .section-one {
+    width: 100%;
+  }
+  main .section-one p {
+    width: 100%;
+  }
+  main .section-two {
+    width: 100%;
+  }
+  main .section-two .titulo {
+    flex-direction: column;
+  }
+  main .section-two .titulo button {
+    width: 30%;
+    margin: 0;
+    padding: 3px;
+  }
+  main .section-two .time p {
+    margin-left: 1%;
+  }
+  main .section-two .kasisto {
+    width: 50%;
+  }
+  main .section-two .kasisto img {
+    border-radius: 4px;
+  }
+  main .section-two .contenido {
+    width: 95%;
+    margin-bottom: 10%;
+  }
+
+  footer {
+    color: #b9bdcf;
+  }
+}
+
 /*# sourceMappingURL=job.css.map */

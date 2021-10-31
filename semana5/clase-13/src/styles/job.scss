@@ -117,3 +117,54 @@ main {
 footer {
   text-align: center;
 }
+
+@media (min-width: 360px) and (max-width: 810px) {
+  .wrapper {
+    width: 360px;
+    margin: auto;
+    height: 100%;
+  }
+  main {
+    padding: 0 10px 0 0;
+    .section {
+      margin-top: 15px;
+      margin-left: 15px;
+    }
+    flex-direction: column;
+    .section-one {
+      width: 100%;
+      p {
+        width: 100%;
+      }
+    }
+    .section-two {
+      width: 100%;
+      .titulo {
+        flex-direction: column;
+        button {
+          width: 30%;
+          margin: 0;
+          padding: 3px;
+        }
+      }
+      .time {
+        p {
+          margin-left: 1%;
+        }
+      }
+      .kasisto {
+        width: 50%;
+        img {
+          border-radius: 4px;
+        }
+      }
+      .contenido {
+        width: 95%;
+        margin-bottom: 10%;
+      }
+    }
+  }
+  footer {
+    color: #b9bdcf;
+  }
+}
