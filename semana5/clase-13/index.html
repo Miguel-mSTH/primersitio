@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Github Jobs</title>
+    <link rel="stylesheet" href="./dist/reset.css" />
     <link rel="stylesheet" href="./dist/core.css" />
   </head>
   <body>
@@ -19,12 +20,15 @@
             src="https://picsum.photos/1200/138"
             alt=""
           />
-          <div class="job-search">
+
+          <div class="div job-search" style="background: white; padding: 5px">
+            <img class="img-bag" src="./images/portfolio.png" alt="" />
             <input
               class="input input-search"
               type="text"
               placeholder="Title, companies, expertise or benefits"
             />
+
             <button class="btn btn-search">SEARCH</button>
           </div>
         </section>
@@ -42,19 +46,19 @@
             />
             <div class="radio">
               <label for="london">
-                <input id="london" name="london" type="radio" />
+                <input id="london" name="city" type="radio" />
                 London
               </label>
               <label for="amsterdam">
-                <input id="amsterdam" name="amsterdam" type="radio" />
+                <input id="amsterdam" name="city" type="radio" />
                 Amsterdam
               </label>
               <label for="new-york">
-                <input id="new-york" checked name="new-york" type="radio" />
+                <input id="new-york" checked name="city" type="radio" />
                 New York
               </label>
               <label for="berlin">
-                <input id="berlin" name="berlin" type="radio" />
+                <input id="berlin" name="city" type="radio" />
                 Berlin
               </label>
             </div>
@@ -69,15 +73,13 @@
                 />
                 <div>
                   <h4>Kasisto</h4>
-                  <h3>Front-End Software Engineer</h3>
-                  <div>
-                    <button class="btn btn-full">Full Time</button>
-                  </div>
+                  <a href="./job.html">Front-End Software Engineer</a>
+                  <button class="btn btn-full">Full Time</button>
                 </div>
               </div>
               <div class="div-right">
-                <p>New York</p>
-                <p>5 days ago</p>
+                <p><img src="./images/world.png" alt="" /> New York</p>
+                <p><img src="./images/clock.png" alt="" /> 5 days ago</p>
               </div>
             </div>
             <div class="div div-two">
@@ -90,14 +92,13 @@
                 <div>
                   <h4>Lev</h4>
                   <h3>Senior Engineer (back end)</h3>
-                  <div>
-                    <button class="btn btn-full">Full Time</button>
-                  </div>
+
+                  <button class="btn btn-full">Full Time</button>
                 </div>
               </div>
               <div class="div-right">
-                <p>NY or LA</p>
-                <p>5 days ago</p>
+                <p><img src="./images/world.png" alt="" /> NY or LA</p>
+                <p><img src="./images/clock.png" alt="" /> 5 days ago</p>
               </div>
             </div>
             <div class="div div-three">
@@ -110,14 +111,12 @@
                 <div>
                   <h4>Sesame</h4>
                   <h3>Software engineer (back end)</h3>
-                  <div>
-                    <button class="btn btn-full">Full Time</button>
-                  </div>
+                  <button class="btn btn-full">Full Time</button>
                 </div>
               </div>
               <div class="div-right">
-                <p>New York; Berlin</p>
-                <p>5 days ago</p>
+                <p><img src="./images/world.png" alt="" /> New York; Berlin</p>
+                <p><img src="./images/clock.png" alt="" /> 5 days ago</p>
               </div>
             </div>
             <div class="div div-four">
@@ -130,14 +129,12 @@
                 <div>
                   <h4>New York University</h4>
                   <h3>Software engineer (back end)</h3>
-                  <div>
-                    <button class="btn btn-full">Full Time</button>
-                  </div>
+                  <button class="btn btn-full">Full Time</button>
                 </div>
               </div>
               <div class="div-right">
-                <p>New York</p>
-                <p>5 days ago</p>
+                <p><img src="./images/world.png" alt="" /> New York</p>
+                <p><img src="./images/clock.png" alt="" /> 5 days ago</p>
               </div>
             </div>
             <div class="div div-five">
@@ -150,28 +147,36 @@
                 <div>
                   <h4>Paddle</h4>
                   <h3>Senior Python Software Engineerr</h3>
-                  <div>
-                    <button class="btn btn-full">Full Time</button>
-                  </div>
+                  <button class="btn btn-full">Full Time</button>
                 </div>
               </div>
               <div class="div-right">
-                <p>New York</p>
-                <p>5 days ago</p>
+                <p><img src="./images/world.png" alt="" /> New York</p>
+                <p><img src="./images/clock.png" alt="" /> 5 days ago</p>
               </div>
             </div>
           </div>
         </section>
         <section class="section section-three">
-          <div>
-            <button class="btn btn-footer"><</button>
-            <button class="btn btn-footer">1</button>
-            <button class="btn btn-footer">2</button>
-            <button class="btn btn-footer">3</button>
-            <button class="btn btn-footer">...</button>
-            <button class="btn btn-footer">10</button>
-            <button class="btn btn-footer">></button>
-          </div>
+          <nav aria-label="Page navigation example">
+            <ul class="pagination">
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Previous">
+                  <span aria-hidden="true">&laquo;</span>
+                </a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li><a href="#">...</a></li>
+              <li><a href="#">10</a></li>
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Next">
+                  <span aria-hidden="true">&raquo;</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
         </section>
       </main>
       <footer>

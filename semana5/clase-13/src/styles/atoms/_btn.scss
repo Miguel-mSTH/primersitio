@@ -3,15 +3,18 @@
   color: white;
   border: 1px solid #1e86ff;
   padding: 10px;
-  border-radius: 10px;
+  border-radius: 4px;
 }
 .btn-full {
-  width: 80px;
   background: white;
   color: black;
   border: 1px solid black;
 }
-.btn-footer:hover {
-  background: white;
-  color: #1e86ff;
+.pagination {
+  li:hover {
+    background: white;
+    a {
+      color: #1e86ff;
+    }
+  }
 }

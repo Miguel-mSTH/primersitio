@@ -4,6 +4,11 @@
   border-radius: 5px;
   box-sizing: border-box;
 }
+.img-bag {
+  margin: auto;
+  filter: brightness(0) saturate(100%) invert(83%) sepia(12%) saturate(308%)
+    hue-rotate(192deg) brightness(94%) contrast(83%);
+}
 .img-div {
   width: 90px;
 }

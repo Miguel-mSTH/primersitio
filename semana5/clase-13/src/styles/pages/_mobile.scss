@@ -3,9 +3,6 @@
     width: 360px;
     margin: auto;
   }
-  header {
-    background: orange;
-  }
   main {
     .section-two {
       display: inline-block;
@@ -25,7 +22,7 @@
           .div-right {
             width: 70%;
             flex-direction: row;
-            justify-content: space-around;
+            justify-content: space-between;
             margin-left: 30%;
             margin-top: 0;
             margin-bottom: 0;

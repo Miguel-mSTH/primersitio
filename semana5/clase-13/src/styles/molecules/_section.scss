@@ -2,38 +2,57 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 10px;
-  background: orange;
   box-sizing: border-box;
+  background: white;
+  padding: 10px;
+  border-radius: 4px;
   .div-left {
     display: flex;
-    width: 70%;
+    width: 60%;
 
     div {
       display: flex;
       flex-direction: column;
       margin-left: 2%;
-      padding: 3px;
+      align-items: flex-start;
     }
 
     h4 {
       font-size: 14px;
-      margin-bottom: 0;
-      margin-top: 0;
+      margin-bottom: 5%;
     }
 
-    h3 {
+    a {
       font-size: 18px;
-      margin-bottom: 0;
-      margin-top: 0;
+      margin-bottom: 5%;
+      text-decoration: none;
+      color: black;
     }
   }
   .div-right {
-    width: 30%;
+    width: 40%;
     display: flex;
     justify-content: space-around;
     align-items: flex-end;
     p {
       color: #b9bdcf;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+  }
+}
+.pagination {
+  display: flex;
+  justify-content: flex-end;
+  li {
+    padding: 7px;
+    border: 1px solid #1e86ff;
+    margin: 2px;
+    background: #1e86ff;
+    border-radius: 4px;
+    a {
+      color: white;
+      text-decoration: none;
     }
   }
 }

@@ -1,15 +1,22 @@
+.wrapper {
+  height: 100vh;
+  margin: auto;
+  max-width: 1200px;
+  display: flex;
+  background: #eef1f2;
+  flex-direction: column;
+  padding: 0 10px;
+}
 @media (min-width: 360px) and (max-width: 810px) {
   .wrapper {
     width: 360px;
     margin: auto;
+    height: 100%;
   }
-}
-.wrapper {
-  margin: auto;
-  padding: 10px;
 }
 
 main {
+  flex-grow: 1;
   .section-one {
     position: relative;
     display: flex;
@@ -26,20 +33,29 @@ main {
     width: 100%;
     display: flex;
     justify-content: space-around;
+    margin-top: 10px;
     .section-left {
       width: 30%;
+      margin-bottom: 10px;
       h3 {
         color: #b9bdcf;
+        margin-top: 3%;
+        margin-bottom: 3%;
       }
     }
     .section-right {
       width: 60%;
+      .div-right {
+        img {
+          height: 15px;
+          filter: brightness(0) saturate(100%) invert(83%) sepia(12%)
+            saturate(308%) hue-rotate(192deg) brightness(94%) contrast(83%);
+        }
+      }
     }
   }
   .section-three {
     width: 97.5%;
-    display: flex;
-    justify-content: flex-end;
   }
 }
 

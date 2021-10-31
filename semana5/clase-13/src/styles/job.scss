@@ -1,0 +1,118 @@
+.wrapper {
+  height: 100vh;
+  margin: auto;
+  max-width: 1200px;
+  display: flex;
+  background: #eef1f2;
+  flex-direction: column;
+  padding: 0 10px;
+}
+header {
+  padding: 10px 0;
+  margin-bottom: 1%;
+  h1 {
+    font-size: 24px;
+    font-weight: bold;
+    span {
+      font-weight: normal;
+    }
+  }
+}
+main {
+  flex-grow: 1;
+  display: flex;
+  .section-one {
+    width: 25%;
+    .back {
+      display: flex;
+      padding: 0 0 20px 0;
+      filter: brightness(0) saturate(100%) invert(48%) sepia(44%)
+        saturate(5827%) hue-rotate(197deg) brightness(100%) contrast(103%);
+      a {
+        font-size: 15px;
+        text-decoration: none;
+        margin-left: 1%;
+      }
+    }
+    span {
+      color: #b9bdcf;
+      font-size: 15px;
+    }
+    p {
+      width: 70%;
+      color: #334680;
+      font-size: 15px;
+      margin-top: 10px;
+      span {
+        color: #1e86ff;
+      }
+    }
+  }
+  .section-two {
+    width: 75%;
+    .titulo {
+      display: flex;
+      button {
+        margin-left: 1%;
+        color: #334680;
+        border: 1px solid #334680;
+        border-radius: 4px;
+      }
+    }
+    h2 {
+      color: #334680;
+      font-size: 24px;
+      font-weight: bold;
+    }
+    .time {
+      display: flex;
+      padding: 10px 0;
+      margin-bottom: 10px;
+      filter: brightness(0) saturate(100%) invert(89%) sepia(11%) saturate(339%)
+        hue-rotate(192deg) brightness(86%) contrast(87%);
+      img {
+        margin-right: 0.6%;
+      }
+    }
+    .kasisto {
+      display: flex;
+      width: 30%;
+      img {
+        width: 42px;
+        height: 42px;
+      }
+
+      .general {
+        display: flex;
+        flex-direction: column;
+        margin-left: 3%;
+        h3 {
+          width: 100%;
+          color: #334680;
+          font-size: 18px;
+          font-weight: bold;
+        }
+        div {
+          display: flex;
+          padding: 5px 0;
+          filter: brightness(0) saturate(100%) invert(89%) sepia(11%)
+            saturate(339%) hue-rotate(192deg) brightness(86%) contrast(87%);
+          img {
+            height: 16px;
+            width: 16px;
+          }
+        }
+      }
+    }
+    .contenido {
+      width: 90%;
+      margin-top: 20px;
+      p {
+        color: #334680;
+      }
+    }
+  }
+}
+footer {
+  text-align: center;
+}
