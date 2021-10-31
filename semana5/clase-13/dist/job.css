@@ -116,6 +116,9 @@ main .section-two .contenido p {
 footer {
   text-align: center;
 }
+footer p {
+  color: #b9bdcf;
+}
 
 @media (min-width: 360px) and (max-width: 810px) {
   .wrapper {
@@ -163,7 +166,7 @@ footer {
     margin-bottom: 10%;
   }
 
-  footer {
+  footer p {
     color: #b9bdcf;
   }
 }

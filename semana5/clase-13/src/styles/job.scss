@@ -116,6 +116,9 @@ main {
 }
 footer {
   text-align: center;
+  p {
+    color: #b9bdcf;
+  }
 }
 
 @media (min-width: 360px) and (max-width: 810px) {
@@ -165,6 +168,8 @@ footer {
     }
   }
   footer {
-    color: #b9bdcf;
+    p {
+      color: #b9bdcf;
+    }
   }
 }
