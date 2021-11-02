@@ -130,33 +130,11 @@
         </section>
         <section class="section-four">
           <h3>BLOG</h3>
-          <div class="grid">
-            <div class="grid-div">
+          <div class="wrapper">
+            <div class="div-one">
               <img src="./images/Rectangle 18.png" alt="" />
-              <div>
-                <h6>CSS3 ANIMATIOS</h6>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem
-                  ipsum dolor sit amet, consectetur adipiscing , consectetur
-                  adipisc,... Leer mas
-                </p>
-              </div>
-            </div>
-            <div class="grid-div">
-              <img src="./images/Rectangle 19.png" alt="" />
-              <div>
-                <h6>Javascript animation</h6>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem
-                  ipsum dolor sit amet, consectetur adipiscing , consectetur
-                  adipisc,... Leer mas
-                </p>
-                <img src="./images/Rectangle 20.png" alt="" />
-              </div>
-            </div>
-            <div class="grid-div">
-              <div>
-                <h6>JS El nuevo Rey</h6>
+              <div class="bottom">
+                <span>JS El nuevo Rey</span>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem
                   ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum
@@ -164,27 +142,53 @@
                   sit amet, consectetur adipisc,... Leer mas
                 </p>
               </div>
-              <img src="./images/Rectangle 21.png" alt="" />
             </div>
-            <div class="grid-div">
-              <div>
-                <h6>JS Engine</h6>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem
-                  ipsum dolor sit amet, consectetur adipiscing , consectetur
-                  adipisc,... Leer mas
-                </p>
-              </div>
-              <div>
-                <p>
-                  Nos gusta escribir y compartir sobre tecnologia, diseño,
-                  tendencias, y muchas cosas mas. Si te gustaria recibir
-                  nuestras pubicaciones subscribete
-                </p>
-                <div>
-                  <input type="text" placeholder="E-mail" />
-                  <button>Subscribete</button>
+            <div class="div-two">
+              <div class="flex flex-top">
+                <div class="left">
+                  <span>CSS3 ANIMATIONS</span>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing ,
+                    consectetur adipisc,... Leer mas
+                  </p>
                 </div>
+                <img src="./images/Rectangle 19.png" alt="" />
+              </div>
+              <div class="flex flex-bottom">
+                <img src="./images/Rectangle 21.png" alt="" />
+                <div class="right">
+                  <span>JS Engine</span>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing ,
+                    consectetur adipisc,... Leer mas
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="div-three">
+              <div class="flex">
+                <div class="top">
+                  <span>Javascript animation</span>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing ,
+                    consectetur adipisc,... Leer mas
+                  </p>
+                </div>
+                <img src="./images/Rectangle 20.png" alt="" />
+              </div>
+              <div class="bottom">
+                <p>
+                  Nos gusta escribir y compatir sobre tecnologia, diseño,
+                  tendencias, y muchas cosas mas. Si te gustaria recibir
+                  nuestras publicaciones suscribete
+                </p>
+                <form action="">
+                  <input type="text" placeholder="E-mail" />
+                  <button>Suscribirse</button>
+                </form>
               </div>
             </div>
           </div>
@@ -194,14 +198,24 @@
           <form action="">
             <div class="wrapper2">
               <div class="name">
-                <input type="text" name="" id="" placeholder="Nombre" />
-                <input type="text" placeholder="Apellido" />
+                <input
+                  class="nombre"
+                  type="text"
+                  name=""
+                  id=""
+                  placeholder="Nombre"
+                />
+                <input class="apellido" type="text" placeholder="Apellido" />
 
-                <input type="email" placeholder="Correo" />
-                <input type="number" placeholder="Telefono" />
+                <input class="correo" type="email" placeholder="Correo" />
+                <input class="telefono" type="number" placeholder="Telefono" />
               </div>
               <div class="descrip">
-                <input type="text" placeholder="Descripcion" />
+                <input
+                  class="descripcion"
+                  type="text"
+                  placeholder="Descripcion"
+                />
               </div>
               <div class="enviar">
                 <button>ENVIAR</button>
