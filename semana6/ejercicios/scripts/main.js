@@ -76,7 +76,7 @@ function convertirMetros() {
 
 //convertirMetros();
 //alert(totalPulgadas);
-
+//EXERCISE 8
 function convertirSoles() {
   const dolar = 0.25;
   let dineroSoles = parseFloat(
@@ -88,7 +88,7 @@ function convertirSoles() {
 
 //convertirSoles();
 //alert(totalDolar);
-
+//EXERCISE 9
 function edadTrabajo() {
   const actual = 2021;
   let nacer = parseFloat(prompt("Indique el año de tu nacimiento :"));
@@ -98,7 +98,7 @@ function edadTrabajo() {
 
 //edadTrabajo();
 //alert(edadActual);
-
+//EXERCISE 10
 function mensaje2(nom, ed) {
   return `${nom} con ${ed} años es el menor de todos`;
 }
@@ -127,7 +127,7 @@ function menorEdad() {
 }
 
 //menorEdad();
-
+//EXERCISE 11
 function bono() {
   let yearWork = parseInt(prompt("Ingrese los años que trabajo"));
 
@@ -158,19 +158,82 @@ function bono() {
   }
 }
 //bono();
-//EXERCISE 11
+//EXERCISE 12
 function profesor() {
   let inicialSalario = 1500;
+  const years = 7;
 
-  switch (inicialSalario) {
-    case inicialSalario * 0.1: {
-      return salario2;
-    }
+  for (let i = 1; i < years; i++) {
+    inicialSalario = inicialSalario + inicialSalario * 0.1;
+    console.log("El salario del año " + i + " es " + parseInt(inicialSalario));
   }
 }
+
+//profesor();
 
 //plantillas para publicidad (evatoro) envatomaster themeforest
 //figma prototipo
 //benchmarking
 
 //dribbble ejemplo de sistemas layaout para inspirarse
+
+//EXERCISE 13
+function alumnosAprobados() {
+  let cantidadAlumnos = parseFloat(prompt("Ingrese el numero de alumnos"));
+  for (let i = 0; i < cantidadAlumnos; i++) {
+    let notaAlumno = parseFloat(prompt("Ingrese nota del alumno " + i));
+    if (notaAlumno < 10) {
+      console.log("El alumno " + i + " desaprobo");
+    } else {
+      console.log("El alumno " + i + " aprobo");
+    }
+  }
+}
+
+//alumnosAprobados();
+
+//EXERCISE 14
+function focos() {
+  let cantidadFocos = parseFloat(prompt("ingrese la cantidad de focos"));
+  verde = 0;
+  rojo = 0;
+  blanco = 0;
+  while (cantidadFocos > 0) {
+    let color = prompt("ingrese el color verde,blanco,rojo");
+    switch (color) {
+      case "verde": {
+        verde++;
+        break;
+      }
+      case "blanco": {
+        blanco++;
+        break;
+      }
+      case "rojo": {
+        rojo++;
+        break;
+      }
+      default: {
+        console.log("color no valido");
+      }
+    }
+    cantidadFocos--;
+  }
+  console.log(
+    "Los focos verdes: " + verde + " blancos: " + blanco + " rojos: " + rojo
+  );
+}
+//focos();
+
+//EXERCISE 15
+
+function votarOn() {
+  let edadVotar = parseFloat(prompt("Ingrese su edad"));
+  if (edadVotar < 18) {
+    console.log("No puede votar");
+  } else {
+    console.log("Puede votar");
+  }
+}
+
+//votarOn();
