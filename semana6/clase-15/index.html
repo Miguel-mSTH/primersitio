@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript</title>
+  </head>
+  <body>
+    <!--     <script>
+      let nombre = "miguel";
+      console.log(nombre);
+    </script>
+    <script src="./script/variables.js"></script>
+    <script src="./script/funciones.js"></script> -->
+    <script src="">
+      //arguments --> es todo los datos de la funcion ejemp. arguments[0]
+      //length -> es para saber la cantidad de argumentos
+      //(...) parametros rest . Es el resto de los datos (a, ...b)
+      function fn2(a, ...b) {
+        console.log(a);
+      }
+      fn2(1, 2, 3, 4, 5);
+      //En el console log a -- saldria solo el valor 1
+      //en cambio en el console log b -- saldria los demas valores 2,3,4,5
+
+      //console.warn
+      //console.error
+      //console.info
+
+      //operdadores aritmeticos
+      //++x incrementa en uno
+      //--x resta en uno
+      //a == b
+      //a === b //compara valor y tipo (string)
+      //a != b
+      //a !== b
+
+      //comparadores logicos
+      // && and
+      // || or
+      // ! not ejemp. !(true) dara como resultado false
+    </script>
+    <script src="./script/loops.js"></script>
+  </body>
+</html>
