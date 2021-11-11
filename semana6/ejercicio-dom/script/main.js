@@ -33,6 +33,7 @@ form.addEventListener("submit", function (e) {
     if (flag) app.removeChild(article);
   };
   app.appendChild(article);
+  console.log(app);
   this.reset();
 });
 

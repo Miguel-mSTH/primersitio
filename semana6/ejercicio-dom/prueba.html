@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prueba</title>
+    <style>
+      * {
+        margin: 0;
+        box-sizing: border-box;
+      }
+      form input {
+        width: 100%;
+        padding: 10px;
+      }
+      .wrap-input {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        padding: 20px;
+      }
+      .wrap-button {
+        display: flex;
+        justify-content: space-evenly;
+        padding: 20px;
+      }
+      .app {
+        background: #cdcdcd;
+        border: 1px solid black;
+      }
+      .card {
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+      }
+    </style>
+  </head>
+  <body>
+    <header><h1>Prueba</h1></header>
+    <main>
+      <form action="">
+        <div class="wrap-input">
+          <div>
+            <input class="js_razon" type="text" placeholder="Razon Social" />
+          </div>
+          <div>
+            <input class="js_address" type="text" placeholder="Direccion" />
+          </div>
+          <div>
+            <input
+              class="js_sector"
+              type="text"
+              placeholder="Sector Comercial"
+            />
+          </div>
+          <div>
+            <input class="js_phoneone" type="number" placeholder="Telefono 1" />
+          </div>
+          <div>
+            <input
+              class="js_tipodocumento"
+              type="text"
+              placeholder="Tipo Documento"
+            />
+          </div>
+          <div>
+            <input class="js_phonetwo" type="number" placeholder="Telefono 2" />
+          </div>
+          <div>
+            <input
+              class="js_numdocumento"
+              type="text"
+              placeholder="Numero de documento"
+            />
+          </div>
+          <div>
+            <input class="js_email" type="text" placeholder="Correo" />
+          </div>
+        </div>
+        <div class="wrap-button">
+          <button>Nuevo</button>
+          <button>Guardar</button>
+          <button>Editar</button>
+          <button>Cancelar</button>
+        </div>
+      </form>
+      <div id="app" class="app"></div>
+    </main>
+    <script>
+      const inputRazon = document.querySelector(".js_razon");
+      const inputAddress = document.querySelector(".js_address");
+      const inputSector = document.querySelector(".js_sector");
+      const inputPhoneone = document.querySelector(".js_phoneone");
+      const inputTipodocumento = document.querySelector(".js_tipodocumento");
+      const inputPhonetwo = document.querySelector(".js_phonetwo");
+      const inputNumdocumento = document.querySelector(".js_numdocumento");
+      const inputMail = document.querySelector(".js_email");
+
+      const textobtn = document.querySelector("button");
+
+      const form = document.querySelector("form");
+
+      form.addEventListener("submit", function (evento) {
+        evento.preventDefault();
+
+        const newDiv = document.createElement("div");
+        newDiv.innerHTML = `
+        <h2>${inputRazon.value}</h2>
+        <h2>${inputAddress.value}</h2>
+        <h2>${inputSector.value}</h2>
+        <h2>${inputPhoneone.value}</h2>
+        <h2>${inputTipodocumento.value}</h2>
+        <h2>${inputPhonetwo.value}</h2>
+        <h2>${inputNumdocumento.value}</h2>
+        <h2>${inputMail.value}</h2>
+        `;
+        newDiv.classList.add("card");
+        app.appendChild(newDiv);
+        this.reset();
+      });
+    </script>
+  </body>
+</html>
