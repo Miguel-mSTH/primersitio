@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+header {
+  background: violet;
+}
+body {
+  font-family: arial;
+}
+section h2 {
+  text-align: center;
+  color: skyblue;
+}
+form .wrap {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+form input {
+  width: 100%;
+  padding: 10px;
+  transition: all 0.5s ease;
+  border-radius: 4px;
+  border: 1px solid black;
+}
+form input:focus {
+  outline: none;
+}
+form input:hover {
+  border: 3px solid skyblue;
+}
+form div {
+  padding: 10px;
+}
+form button {
+  width: 30%;
+  padding: 10px;
+  background: green;
+  color: white;
+  border: 1px solid green;
+  border-radius: 4px;
+}
+.btn {
+  text-align: center;
+}
+h1 {
+  text-align: center;
+  margin: 20px 0 10px;
+}
+.app {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 20px;
+  border: 1px solid #cdcdcd;
+  margin: 15px;
+  border-radius: 4px;
+  background: #ebebeb;
+}
+
+.card {
+  border: 1px solid #cdcdcd;
+  padding: 10px;
+  border-radius: 4px;
+  position: relative;
+  background: white;
+  text-align: center;
+}
+
+.card:hover {
+  box-shadow: 0 0 10px rgb(161, 161, 161);
+}
+.card h2 {
+  font-size: 13px;
+  color: #616161;
+  margin-bottom: 4px;
+}
+.card h2 span {
+  color: violet;
+}
+.card img {
+  width: 167px;
+  height: 167px;
+  border-radius: 100%;
+}
+.card .prueba {
+  width: 18px;
+  height: 18px;
+}
+
+.card button {
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  background: red;
+  color: white;
+  border: 1px solid red;
+  cursor: pointer;
+}
+.card div {
+  display: flex;
+  justify-content: center;
+}
