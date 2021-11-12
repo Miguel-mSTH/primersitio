@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Metodo DOM</title>
+  </head>
+  <body>
+    <!--REPLACECHILD-->
+    <!-- <button>REEMPLAZAR</button>
+    <div class="container">
+      <h2>Hola mundo por defecto</h2>
+    </div>
+    <script>
+      const h1 = document.createElement("h1");
+      h1.innerHTML = ` <span>Hola mundo reempplazado</span>`;
+      const container = document.querySelector(".container");
+      const button = document.querySelector("button");
+      const h2 = document.querySelector("h2");
+
+      button.addEventListener("click", function () {
+        container.replaceChild(h1, h2); // reemplaza el h2 por el h1
+      });
+    </script> -->
+
+    <!--CLONENODE-->
+    <!-- <div>
+      <p>Lorem ipsum dolor sit</p>
+      <ul>
+        1
+      </ul>
+      <ul>
+        2
+      </ul>
+      <ul>
+        3
+      </ul>
+      <ul>
+        4
+      </ul>
+    </div>
+    <script>
+      const div = document.querySelector("div");
+      div.onclick = function () {
+        alert("Hola");
+      };
+
+      const clone = div.cloneNode(true); //clona el div mas los ul cuando esta en true pero no copia las funciones; en false solo copia el div sin las ul
+      document.querySelector("body").appendChild(clone);
+    </script> -->
+
+    <!--INSERTBEFORE-->
+    <button>INSERTBEFORE</button>
+    <div class="container">
+      <h2>Hola mundo por defecto</h2>
+    </div>
+    <script>
+      const h1 = document.createElement("h1");
+      h1.innerHTML = "<span>Hola mundo reemplazado</span";
+      const h2 = document.querySelector("h2");
+      const container = document.querySelector(".container");
+      const button = document.querySelector("button");
+
+      button.addEventListener("click", function () {
+        container.insertBefore(h1, h2); // inserta el h1 antes del h2
+        //container.insertBefore(h1,h2.nextSibling)
+      });
+    </script>
+  </body>
+</html>
