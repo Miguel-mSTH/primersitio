@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TODO List</title>
+    <style>
+      * {
+        margin: 0;
+        box-sizing: border-box;
+      }
+      header {
+        background: #1fcd93;
+        margin-bottom: 10px;
+        text-align: center;
+        color: rebeccapurple;
+      }
+      .wrapper {
+        width: 960px;
+        margin: auto;
+      }
+      form {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+      }
+      button {
+        border: none;
+        background: white;
+        margin: 10px 0 10px 0;
+        color: violet;
+      }
+      form input {
+        width: 50%;
+        text-align: center;
+        margin: auto;
+        padding: 5px;
+        border-radius: 4px;
+        border: 1px solid skyblue;
+        color: blue;
+      }
+      .card {
+        width: 30%;
+        margin: auto;
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+        color: skyblue;
+      }
+      .card input {
+        margin: 0 5px 0 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header><h1>TODO List</h1></header>
+      <form action="">
+        <input
+          class="js_input"
+          type="text"
+          placeholder="Ingrese la tarea a guardar"
+        />
+        <button>Add New Task</button>
+      </form>
+      <div id="app" class="app"></div>
+    </div>
+    <script>
+      const inputTarea = document.querySelector(".js_input");
+      const form = document.querySelector("form");
+
+      form.addEventListener("submit", function (evt) {
+        evt.preventDefault();
+
+        const newDiv = document.createElement("div");
+        newDiv.innerHTML = `
+        <button><img src="https://img.icons8.com/fluency/16/000000/trash.png"/></button>
+        <input type="checkbox">${inputTarea.value}
+        `;
+        newDiv.classList.add("card");
+        newDiv.querySelector("button").onclick = function () {
+          const prs = newDiv.querySelector("input");
+
+          if (prs.checked == true) {
+            const flag = confirm(
+              "Estas seguro que deseas elminar la tarea creada"
+            );
+            if (flag) app.removeChild(newDiv);
+          } else {
+            alert("Selecciona el check");
+          }
+        };
+        app.appendChild(newDiv);
+        this.reset();
+      });
+    </script>
+  </body>
+</html>
