@@ -1,0 +1,23 @@
+{
+  "name": "codigo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "json-server": "^0.17.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "dbFake": "npx json-server --watch ./db.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Miguel-mSTH/primersitio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Miguel-mSTH/primersitio/issues"
+  },
+  "homepage": "https://github.com/Miguel-mSTH/primersitio#readme"
+}

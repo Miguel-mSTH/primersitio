@@ -40,6 +40,7 @@ console.log("unshift()", num.unshift()); //agrega
 console.log("push", num.push(2)); //agrega
 console.log("pop()", num.pop(2)); //elmiina el ultimo
 
+//ARRAY METODOS
 const alumnos = [
   {
     name: "miguel",
@@ -98,3 +99,110 @@ const resutado = numeros.reduce((acumulado, valorActual, indice, array) => {
   console.log("valorActual", valorActual);
   return acumulado + valorActual;
 }, 0);
+
+//OBJETOS
+
+//assign - crea una copia(puede crear (unir) de varios objetos pero si tiene una propiedad igual lo sobreescribe
+
+const objeto = {
+  name: "miguel",
+  lastname: "espinoza",
+};
+
+const objeto2 = {
+  age: 3,
+  country: "peru",
+};
+
+const objeto3 = {
+  name: "miguel",
+  lastname: "espinoza",
+};
+
+const copia = Object.assign({}, objeto, objeto2, objeto3); //{} hace referencia al objeto nuevo a crearse
+console.log("la copia", copia);
+
+//entries //devuelve clave y valor como array
+console.log("Object.entries", Object.entries(copia));
+
+//keys
+console.log("Object.keys", Object.keys(copia));
+
+//values
+console.log("Object.values", Object.values(copia));
+
+//hasOwnProperty -- entrega valor boolean si la propiedad existe en el objeto
+console.log("Object.hasOwnProperty", copia.hasOwnProperty("age"));
+
+//NUMBER
+console.log(Number.parseInt("3"));
+console.log(Number.parseInt("3.000"));
+console.log(Number.parseFloat("3.14"));
+//to.fixed --agrega decimales (0)
+console.log(Number.parseFloat("3.14").toFixed(5));
+
+//MATH
+console.log(Math.pow(9, 2));
+console.log(Math.round(5.4));
+
+//DATE
+console.log("getDate", new Date().getDate());
+console.log("getMonth", new Date().getMonth());
+console.log("getDay", new Date().getDay());
+console.log("getHours", new Date().getHours());
+console.log("getMinutes", new Date().getMinutes());
+console.log("getSeconds", new Date().getSeconds());
+
+//....--PROTOTYPE--...//
+
+const longitud = [1, 2, 3, 4, 5];
+console.log(longitud.length);
+
+const str = "hola";
+console.log(str.length);
+console.log(str.toUpperCase());
+
+//BOM
+//WINDOW
+//window.alert
+//alert
+//prompt
+//confirm
+
+setTimeout(() => {
+  console.log("ejecuta aca", new Date().getSeconds());
+}, 1000);
+
+let refInterval = setInterval(() => {
+  console.log("ejecuta aqui", new Date().getSeconds());
+}, 1000);
+
+document.querySelector("button").onclick = function () {
+  clearInterval(refInterval);
+};
+
+document.querySelector("a").onclick = (e) => {
+  e.preventDefault();
+  window.open(
+    "https://www.w3schools.com",
+    "Pagina_CNN", //nueva pestaña
+    "width=400, height=400, left=10px, top=0, centerscreen"
+  );
+};
+
+//HYSTORY
+//back--regresa
+//forward -- te lleva a la pagina siguiente
+
+//localtion
+//reload --recarga
+//replace -- te lleva a una pagina en concreto
+
+//navigator
+//online
+//geolocation
+
+//screen
+//width
+//orientation
+//height

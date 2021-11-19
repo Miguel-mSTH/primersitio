@@ -13,10 +13,19 @@ function contarVocales(texto, vocales) {
 
 //console.log(contarVocales("jarana", "a"));
 
-function agregarIndice(texto) {
-  return console.log(texto[1]);
+function AgregarIndice(letra) {
+  let item1;
+  let item2;
+  let texto = "";
+  for (i = 0; i < letra.length; i++) {
+    item1 = letra.slice(i, i + 1);
+    item2 = item1.concat(String(i));
+    texto = texto.concat(item2);
+  }
+  return texto;
 }
-//console.log(agregarIndice("prueba"));
+
+console.log(AgregarIndice("prueba"));
 
 //ARRAY
 function concatenar(letras) {
