@@ -7,10 +7,16 @@
       "age": 23
     },
     {
-      "name": "anderson",
-      "lastname": "espinoza",
+      "name": "Anderson",
+      "lastname": "Espinoza",
       "age": "25",
       "id": 2
+    },
+    {
+      "name": "Rudy",
+      "lastname": "Espinoza",
+      "age": "20",
+      "id": 3
     }
   ]
 }

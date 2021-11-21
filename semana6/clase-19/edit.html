@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FORMULARIO ALUMNOS</title>
+    <link rel="stylesheet" href="./main.css" />
+  </head>
+
+  <body>
+    <nav>
+      <ul>
+        <li><a href="index.html">REGISTAR ALUMNOS</a></li>
+        <li><a href="list.html">ALUMNOS</a></li>
+      </ul>
+    </nav>
+    <div class="box">
+      <h1>REGISTRAR ALUMNOS</h1>
+      <form method="POST" onSubmit="return false;">
+        <div>
+          <input class="js_name" type="text" placeholder="Nombre" required />
+        </div>
+        <div>
+          <input
+            class="js_lastname"
+            type="text"
+            placeholder="Apellido"
+            required
+          />
+        </div>
+        <div>
+          <input class="js_age" type="number" placeholder="Edad" required />
+        </div>
+        <div>
+          <button>Actualizar</button>
+        </div>
+      </form>
+    </div>
+    <script>
+      //1._OBTENER VALOR DE ID DE URL
+      const urlSearchParams = new URLSearchParams(location.search);
+      //console.log('url search params', urlSearchParams.entries())
+      const params = Object.fromEntries(urlSearchParams.entries());
+      //console.log('params',params)
+      //getalumn funcion que invoca endpoint alumnos con id de alumno
+      function getAlumn(id) {
+        fetch(`http://localhost:3000/alumnos/${id}`)
+          .then((response) => response.json())
+          .then((alumno) => {
+            //console.log('alumno',alumno)
+            setForm(alumno);
+          });
+      }
+      //4._updatealumn funcion recibe id y datos a actualizar
+      function updateAlumn(id, payload) {
+        fetch(`http://localhost:3000/alumnos/${id}`, {
+          method: "PUT",
+          body: JSON.stringify(payload),
+          headers: {
+            "Content-type": "application/json; charset=UTF-8",
+          },
+        }).then(() => {
+          location.replace("/semana6/clase-19/list.html");
+        });
+      }
+
+      //3._setForm funcion que setea valor de alumno en formulario y dispara evento
+      function setForm(alumno) {
+        const name = document.querySelector(".js_name");
+        const lastname = document.querySelector(".js_lastname");
+        const age = document.querySelector(".js_age");
+        const form = document.querySelector("form");
+
+        //seteo formulario
+        name.value = alumno.name;
+        lastname.value = alumno.lastname;
+        age.value = alumno.age;
+
+        //registra evento de formulario
+        form.onsubmit = function (e) {
+          e.preventDefault();
+
+          //envio de datos al servicio
+          updateAlumn(alumno.id, {
+            name: name.value,
+            lastname: lastname.value,
+            age: age.value,
+          });
+        };
+      }
+
+      //2._Invoca get alumns
+      getAlumn(params.id);
+      //API RESTFUL ES TODO LOS VERBOS (GET UPDTDATE DELETE PUT)
+    </script>
+  </body>
+</html>

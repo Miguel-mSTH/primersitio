@@ -22,3 +22,4 @@ JSON.parse(sessionStorage.getItem("numeros")); //lo convierte a array(le quita "
 const objeto = { name: "miguel" };
 sessionStorage.setItem("objeto", JSON.stringify(numeros)); //guardo en json
 JSON.parse(sessionStorage.getItem("objeto")); //lo convierte a objeto(le quita "")
+//REST recursos que nos dan atraves de la url
