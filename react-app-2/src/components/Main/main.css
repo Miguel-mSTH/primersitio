@@ -1,0 +1,14 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  margin: auto;
+}
+
+.main h1 {
+  color: aquamarine;
+  font-weight: bold;
+  margin: 10px 0 10px;
+  text-align: center;
+  font-size: 28px;
+}

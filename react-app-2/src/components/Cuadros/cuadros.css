@@ -1,0 +1,38 @@
+.cuadros {
+  background: #ffffff;
+  padding: 10px;
+  text-align: center;
+  border: 1px solid black;
+}
+.cuadros img {
+  border-radius: 50%;
+}
+.cuadros button {
+  padding: 5px;
+}
+.cuadros button:first-child {
+  border-right: 1px solid red;
+}
+.cuadros button:last-child {
+  border-left: 1px solid red;
+}
+.cuadros label {
+  width: 20px;
+  background: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid red;
+}
+h2 {
+  margin-top: 2%;
+}
+h3 {
+  color: blueviolet;
+  margin-top: 2%;
+}
+.cuadros div {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}

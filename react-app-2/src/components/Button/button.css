@@ -1,0 +1,8 @@
+.button {
+  background: blue;
+  border: 1px solid blue;
+  height: 100%;
+  padding: 8px;
+  border-radius: 8px;
+  color: wheat;
+}
